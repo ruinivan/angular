@@ -16,6 +16,6 @@ export class EventosComponent {
   ngOnInit(): void {}
 
   showMessage(): void {
-    this.show = true;
+    this.show = !this.show; //toggle
   }
 }
