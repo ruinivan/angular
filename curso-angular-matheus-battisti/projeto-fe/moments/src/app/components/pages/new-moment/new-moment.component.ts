@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MomentFormComponent } from '../../moment-form/moment-form.component';
+import { Moment } from '../../../Moment';
 
 @Component({
   selector: 'app-new-moment',
@@ -10,4 +11,8 @@ import { MomentFormComponent } from '../../moment-form/moment-form.component';
 })
 export class NewMomentComponent {
   btnText = 'Compartilhar';
+
+  createHandler(moment: Moment) {
+    console.log('deu bom');
+  }
 }
